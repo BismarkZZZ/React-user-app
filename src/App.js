@@ -16,19 +16,6 @@ class App extends Component {
           gen: 9,
           id: "8932bh2gv8293b",
         },
-
-        {
-          name: "Burma",
-          email: "Burmathis@aol.com",
-          gen: 2,
-          id: "nwe831002ebhb2",
-        },
-        {
-          name: "Bismark",
-          email: "Bismark@mail.com",
-          gen: 4,
-          id: "2781geve0b2",
-        },
       ],
     };
   }
