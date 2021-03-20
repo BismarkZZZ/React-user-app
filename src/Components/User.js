@@ -1,6 +1,8 @@
 import React,{useState} from "react";
 import { Card, Col, Button, Modal } from "react-bootstrap";
 import EditUserForm from "./EditUserForm";
+import {connect} from "react-redux";
+import {deleteUser} from "../actions/usersAction";
 
 
 const User = (props) => {
@@ -45,4 +47,9 @@ const User = (props) => {
     </>
   ); 
 };
-export default User;
+
+const mapDispatchToProps =  {
+  deleteUser
+}
+
+export default connect(null, mapDispatchToProps)(User);
