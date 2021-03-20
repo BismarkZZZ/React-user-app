@@ -7,12 +7,12 @@ import AddUserForm from "./Components/AddUserForm";
 
 class App extends Component {
    
-  addNewUser = (user) => {
-    user.id = Math.random().toString();
-    this.setState({
-      users: [...this.state.users, user],
-    });
-  };
+  // addNewUser = (user) => {
+  //   user.id = Math.random().toString();
+  //   this.setState({
+  //     users: [...this.state.users, user],
+  //   });
+  // };
 
   deleteUser = (id) => {
     let undeletedUsers = this.state.users.filter((user) => user.id !== id);
