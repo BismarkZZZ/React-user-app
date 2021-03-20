@@ -4,7 +4,7 @@ import userReducer from "../reducers/usersReducer";
 
 export const store = createStore(
     combineReducers({
-        users: userReducer,
+        usersState: userReducer,
         auth: authReducer,
     })
 );
