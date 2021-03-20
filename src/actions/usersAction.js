@@ -14,3 +14,11 @@ export const deleteUser = (userId) => {
         payload: userId
     }
 }
+
+//action creator for editing user
+export const editUser = (updatedUser) => {
+    return {
+        type: "EDIT_USER",
+        payload: updatedUser
+    }
+}
