@@ -22,7 +22,7 @@ const User = (props) => {
           <Modal.Title>Edit User</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <EditUserForm userInfo={props.userInfo} editUser={props.editUser} closeModal={getClose}/>
+            <EditUserForm userInfo={props.userInfo} closeModal={getClose}/>
         </Modal.Body>
          
       </Modal>
