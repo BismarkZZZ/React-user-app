@@ -7,3 +7,10 @@ export const addUser = (newUser) => {
     }
 }
 
+//action creator for deleting user
+export const deleteUser = (userId) => {
+    return {
+        type: "DELETE_USER",
+        payload: userId
+    }
+}
