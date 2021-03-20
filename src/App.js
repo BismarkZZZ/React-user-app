@@ -6,19 +6,7 @@ import AddUserForm from "./Components/AddUserForm";
 
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      users: [
-        {
-          name: "Meeky",
-          email: "Meekyx@oasis..com",
-          gen: 9,
-          id: "8932bh2gv8293b",
-        },
-      ],
-    };
-  }
+   
   addNewUser = (user) => {
     user.id = Math.random().toString();
     this.setState({
@@ -54,7 +42,7 @@ class App extends Component {
             <Col>
             <h4>CODETRAIN USERS</h4>
             <br/>
-              <Users userData={this.state.users} deleteUser={this.deleteUser} editUser={this.editUser} />
+              <Users deleteUser={this.deleteUser} editUser={this.editUser} />
             </Col>
           </Row>
         </Container>
