@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import { Form, Button } from "react-bootstrap";
+import {connect} from "react-redux";
+import {editUser} from "../actions/usersAction";
+
 
 
 class EditUserForm extends Component {
@@ -23,7 +26,7 @@ class EditUserForm extends Component {
 
     getSubmit = (e) => {
         e.preventDefault();
-        this.props.editUser(this.state.id, this.state );
+        this.props.editUser(this.state );
         this.setState ({
             name: "",
             email: "",
@@ -61,4 +64,7 @@ class EditUserForm extends Component {
   }
 }
 
-export default EditUserForm;
+const mapDispatchToProps = {
+  editUser
+}
+export default connect(null, mapDispatchToProps) (EditUserForm);
