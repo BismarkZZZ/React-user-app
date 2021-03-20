@@ -14,12 +14,12 @@ class App extends Component {
   //   });
   // };
 
-  deleteUser = (id) => {
-    let undeletedUsers = this.state.users.filter((user) => user.id !== id);
-    this.setState({
-      users: undeletedUsers,
-    });
-  };
+  // deleteUser = (id) => {
+  //   let undeletedUsers = this.state.users.filter((user) => user.id !== id);
+  //   this.setState({
+  //     users: undeletedUsers,
+  //   });
+  // };
 
   editUser = (id, updatedUser) => {
     this.setState({
